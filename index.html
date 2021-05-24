@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- link vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+<!-- mix scss link css -->
+    <link rel="stylesheet" href="dist/style.css">
+
+    <title>Project charity </title>
+</head>
+<body>
+<!-- vue container -->
+    <div id="root" class="max_container">
+        <header>
+          <div class="container">
+            <div class="flex_container">
+              <div class="logo_container">
+                <img src="public\images\avada-charity-mobile-logo.png" alt="logo">
+              </div>
+
+              <div class="empty_div"></div>
+              <!-- ciclo for per recuperare i link della nav bar -->
+              <ul>
+                <li v-for="li in navLinks"><a href="">{{li.name}}</a></li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <main></main>
+        <footer></footer>
+      </div>
+     <script src="script.js"></script>
+</body>
+</html>
