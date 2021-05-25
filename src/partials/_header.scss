@@ -1,0 +1,55 @@
+.style_max_container{
+    height: 600px;
+    background-image: url(/public/images/home-page-slider.jpg);
+    background-size: cover;
+    padding: $spaceing*2;
+}
+
+.flex_container{
+    @include display_flex;
+    .logo_container{
+        img{
+            max-width: 150px;
+        }
+    }
+    .empty_div{
+        flex-grow: 1;
+    }
+    ul{
+        @include display_flex;
+        @include a_list_style_reset;
+        li{
+            padding: $spaceing - 4;
+            margin: 0 $spaceing  ;
+            // background-color: $goldenrod_color;
+            border-radius: 4px;
+            @include hover_yellow_color;
+            a{
+               @include titles_font_family;
+                font-size:$font_size/2;
+                opacity: 50%; 
+                 @include a_list_style_reset;
+
+            }
+           
+        }
+    }
+}
+.title_header{
+    
+    text-align: center;
+    h1{
+        color: $white_color;
+        text-transform: uppercase;
+
+       @include titles_font_family;
+        font-weight: 300;
+        font-size: $font_size*2;
+    }
+    p{
+        color: $white_color;
+        opacity: 0.5;
+        @include p_font_family;
+        font-size: $font_size - 8;
+    }
+}

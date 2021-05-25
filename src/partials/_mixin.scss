@@ -1,0 +1,24 @@
+@mixin a_list_style_reset {
+    list-style: none;
+    text-decoration: none;
+    color:$white_color ;
+}
+
+@mixin hover_yellow_color {
+    :hover{
+        color:$goldenrod_color; 
+    }
+}
+
+@mixin display_flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin p_font_family {
+    font-family: 'Poppins', sans-serif;
+}
+@mixin titles_font_family {
+    font-family: 'Quicksand', sans-serif;
+}
+

@@ -7,4 +7,9 @@
 .max_container{
     max-width: 1020px;
     margin: auto;
+   
+    .container{
+        max-width: 920px;
+        margin: auto;
+    }
 }
