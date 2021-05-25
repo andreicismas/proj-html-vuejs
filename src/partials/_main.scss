@@ -9,7 +9,7 @@
         p{
             font-family: $font_family_p;
             padding: $spaceing 0;
-            font-size: $font_size - 12
+            font-size: $font_size - 10
         }
 
       
@@ -79,7 +79,7 @@
             }
             p{
                 font-family: $font_family_p;
-                font-size: $font_size -  12;
+                font-size: $font_size -  10;
                 padding: $spaceing*2;
                 opacity: 60%;
 
@@ -89,18 +89,139 @@
     
 }
 .section_3{
- justify-content: center;
- flex-direction: column;
- text-align: center;
- padding-bottom: $spaceing*5;
- .section_title{
+    @include flex_just_textAll;
+   
+ 
+
+    .section_title{
     @include title_sections;
     padding: $spaceing*5; 
- }
- .container_img{
-    img{
+    }
+
+    .container_img{
+        padding-bottom: $spaceing*5;
+        img{
         padding: $spaceing - 5;
+        }   
+    }
+    .pink_parth{
+        height: 80px;
+        background-color: $pink_color;
+        color: $white_color;
+
+        
+        display: $dispaly_flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            font-family: $font_family_p;
+            font-size: $font_size - 7;
+        }
     }
 }
+
+.section_4{
+    @include flex_just_textAll;
+    text-align: unset;
+
+    background-color: $bg_section_4;
+    padding-bottom: $spaceing*5;
+    .section_title{
+        @include title_sections;
+        text-align: center;
+        padding: $spaceing*5; 
+    }
+    .pink_parth_2{
+        width: 800px;
+        height: 40px;
+
+        margin: auto;
+
+        display: $dispaly_flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $pink_color;
+
+        p{
+            font-family: $font_family_p;
+            font-size: $font_size - 7;
+            color: $white_color;
+        }
+    }
 }
 
+.container_section_4{
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    padding: $spaceing*3 0;
+    .hero_img{
+        h3{
+            @include section_4_h3;
+        }
+        h3:hover{
+            text-decoration: underline $pink_color;
+            cursor: pointer;
+            transition: 0.3s
+        }
+
+        p{
+            @include section_4_p;
+        }
+    }
+    
+    .wrapper_img{
+        display: flex;
+        img{
+            padding:0 $spaceing + 5;
+            margin-bottom: 14px;
+            width: 120px;
+            height: 80px;
+        }
+        h3{
+            @include section_4_h3;
+        }
+        h3:hover{
+            text-decoration: underline $pink_color;
+            cursor: pointer;
+            transition: 0.3s
+        }
+
+        p{
+            @include section_4_p;
+        }
+       
+    }
+
+}
+
+.section_5{
+    @include flex_just_textAll;
+
+    color: $white_color;
+  
+    background-image: url(/public/images/home-footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: $spaceing*5;
+    .section_title{
+        @include title_sections;
+        
+        text-align: center;
+        padding: $spaceing*5; 
+    }
+    div{
+        button{
+            @include hover_yellow_color;
+            margin: 0 $spaceing*2 ;
+        }
+     
+    }
+}
+
+.section_6{
+    padding: $spaceing*2;
+    justify-content: center;
+}

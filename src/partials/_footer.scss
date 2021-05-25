@@ -1,0 +1,29 @@
+footer{
+    background-color: $footer_color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    div{
+        p{
+            padding: $spaceing*2;
+            font-family: $font_family_p;
+            font-size: $font_size - 10 ;
+            opacity: 0.5;
+        }
+    }
+    div{
+
+        .fab{
+            text-align: center;
+            line-height: 4;
+            align-self: center;
+            font-size: $font_size + 10 ;
+            background-color: violet;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+    }
+}
