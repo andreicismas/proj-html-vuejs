@@ -8,13 +8,24 @@
     max-width: 1020px;
     margin: auto;
     
-    display: flex;
-    flex-direction: column;
+
     
     .container{
         max-width: 920px;
         margin: auto;
         width: 100%;
     }
+}
+
+section{
+    display: $dispaly_flex;
+}
+.gold_line{
+    max-width: 90px;
+    border: solid 1px $goldenrod_color;
+}
+
+.empty_div{
+    flex-grow: 1;
 }
 

@@ -7,6 +7,7 @@
 @mixin hover_yellow_color {
     :hover{
         color:$goldenrod_color; 
+        transition: 0.3s;
     }
 }
 
@@ -27,19 +28,52 @@
 
 @mixin btn_font_style {
     @include titles_font_family;
-    font-size:$font_size - 12;
+    font-size:$font_size - 10;
     color:$white_color ;
     opacity: 60%; 
     padding: ($spaceing - 6) ($spaceing + 12);
     text-transform: uppercase;
     background: none;
-    border: solid 2px;
+    border: solid 2px ;
+    
 
 }
 
 @mixin btn_font_style_whith_bg {
     @include btn_font_style;
     background-color: $goldenrod_color;
+    opacity: 100%;
+    border:solid 2px $goldenrod_color; 
 
+}
+@mixin hover_border_color {
+    :hover{
+        border:solid 2px $light_vibrant; 
+        transition: 0.3s;
+    }
+}
+
+@mixin title_style {
+    text-transform: uppercase;
+    font-family: $font_family_title;
+    font-weight: 100;
+    
+}
+
+@mixin title_sections {
+    h1 {
+        padding-bottom: $spaceing;
+         @include title_style;  
+
+     }
+     
+     .gold_line{
+         margin: auto;
+     }
+     p{
+         font-family: $font_family_p;
+         padding: $spaceing*2;
+     }   
+    
 }
 

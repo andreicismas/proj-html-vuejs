@@ -1,3 +1,11 @@
 .btn_no_bg{
     @include btn_font_style;
 }
+.container_btn_gold{
+    border: 2px $goldenrod_color;
+    .btn_bg_gold{
+        @include btn_font_style_whith_bg;
+    }
+    @include hover_border_color;
+
+}

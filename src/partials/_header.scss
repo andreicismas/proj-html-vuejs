@@ -1,8 +1,13 @@
-.style_max_container{
+.style_header{
     height: 600px;
     background-image: url(/public/images/home-page-slider.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
     background-size: cover;
     padding: $spaceing*2;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .flex_container{
@@ -12,9 +17,7 @@
             max-width: 150px;
         }
     }
-    .empty_div{
-        flex-grow: 1;
-    }
+  
     ul{
         @include display_flex;
         @include a_list_style_reset;
@@ -43,7 +46,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     h1{
         color: $white_color;
         text-transform: uppercase;

@@ -1,0 +1,106 @@
+.section_1{
+    .section_1_text{
+        padding:$spaceing*5;
+        h1{
+            @include title_style;
+            line-height: 2;
+
+        }
+        p{
+            font-family: $font_family_p;
+            padding: $spaceing 0;
+            font-size: $font_size - 12
+        }
+
+      
+        
+
+    }
+    .icon_container{
+        width: 500px;
+        background-image: url(/public/images/home-content-bg-1.jpg);
+        padding:$spaceing*5;
+        
+        .statistics_section_1{
+            color: $white_color;
+            text-align: center;
+            padding: $spaceing;
+            
+    
+            i{
+                font-size: $font_size + 10;
+                text-transform: uppercase;
+            }
+         
+        }
+        
+    
+    }
+    
+}
+
+.section_2{
+    height: 400px;
+    background-image: url(/public/images/home-content-bg-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    .grey_div{
+        background-color:$grey_color ;
+        height: 60px;
+        width: 100%;
+        
+    }
+    .container_section_2{
+        color: $white_color;
+        text-align: center;
+        
+        .section_title{
+           
+            p{
+                color: $white_color;
+                font-size: $font_size - 5;
+                opacity: 1;
+            }
+        }
+        
+        .section_2_icons{
+            padding: $spaceing*5;
+            display: $dispaly_flex;
+        }
+        div{
+           @include title_sections;
+        }
+        div{
+            i{
+                color: $goldenrod_color;
+                font-size: $font_size + 15;
+            }
+            p{
+                font-family: $font_family_p;
+                font-size: $font_size -  12;
+                padding: $spaceing*2;
+                opacity: 60%;
+
+            }
+        }
+    }
+    
+}
+.section_3{
+ justify-content: center;
+ flex-direction: column;
+ text-align: center;
+ padding-bottom: $spaceing*5;
+ .section_title{
+    @include title_sections;
+    padding: $spaceing*5; 
+ }
+ .container_img{
+    img{
+        padding: $spaceing - 5;
+    }
+}
+}
+
