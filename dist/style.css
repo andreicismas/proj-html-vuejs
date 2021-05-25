@@ -367,12 +367,12 @@ section {
   font-family: "Poppins", sans-serif;
   padding: 20px;
 }
-.section_5 div button {
-  margin: 0 20px;
-}
-.section_5 div button :hover {
+.section_5 .btn_container :hover {
   color: #FCD66C;
   transition: 0.3s;
+}
+.section_5 .btn_container button {
+  margin: 0 20px;
 }
 
 .section_6 {
@@ -393,11 +393,7 @@ footer div p {
   font-size: 10px;
   opacity: 0.5;
 }
-footer div .fab {
-  text-align: center;
-  line-height: 4;
-  align-self: center;
-  font-size: 30px;
+footer .fab_wrapper .fab {
   background-color: violet;
   width: 70px;
   height: 70px;

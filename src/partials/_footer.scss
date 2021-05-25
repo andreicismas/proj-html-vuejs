@@ -13,13 +13,10 @@ footer{
             opacity: 0.5;
         }
     }
-    div{
+    .fab_wrapper{
 
         .fab{
-            text-align: center;
-            line-height: 4;
-            align-self: center;
-            font-size: $font_size + 10 ;
+         
             background-color: violet;
             width: 70px;
             height: 70px;

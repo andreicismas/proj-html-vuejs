@@ -212,9 +212,9 @@
         text-align: center;
         padding: $spaceing*5; 
     }
-    div{
+    .btn_container{
+        @include hover_yellow_color;
         button{
-            @include hover_yellow_color;
             margin: 0 $spaceing*2 ;
         }
      
