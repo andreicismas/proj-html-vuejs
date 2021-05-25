@@ -25,7 +25,8 @@
             border-radius: 4px;
             @include hover_yellow_color;
             a{
-               @include titles_font_family;
+              font-family: $font_family_title;
+               
                 font-size:$font_size/2;
                 opacity: 50%; 
                  @include a_list_style_reset;
@@ -38,18 +39,32 @@
 .title_header{
     
     text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     h1{
         color: $white_color;
         text-transform: uppercase;
-
-       @include titles_font_family;
+        
+       font-family: $font_family_title;
         font-weight: 300;
         font-size: $font_size*2;
     }
     p{
         color: $white_color;
-        opacity: 0.5;
-        @include p_font_family;
+        opacity: 60%;
+        font-family: $font_family_p;
+
+        font-family: $font_family_p;
         font-size: $font_size - 8;
+        padding: $spaceing;
+    }
+    div{
+        @include hover_yellow_color;
+        button{
+            margin: $spaceing  ($spaceing - 4);
+        }
     }
 }

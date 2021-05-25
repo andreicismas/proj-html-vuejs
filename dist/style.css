@@ -7,10 +7,24 @@
 .max_container {
   max-width: 1020px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 .max_container .container {
   max-width: 920px;
   margin: auto;
+  width: 100%;
+}
+
+.btn_no_bg {
+  font-family: "Quicksand", sans-serif;
+  font-size: 8px;
+  color: #FFFFFF;
+  opacity: 60%;
+  padding: 4px 22px;
+  text-transform: uppercase;
+  background: none;
+  border: solid 2px;
 }
 
 .style_max_container {
@@ -56,6 +70,10 @@
 
 .title_header {
   text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .title_header h1 {
   color: #FFFFFF;
@@ -66,7 +84,15 @@
 }
 .title_header p {
   color: #FFFFFF;
-  opacity: 0.5;
+  opacity: 60%;
+  font-family: "Poppins", sans-serif;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
+  padding: 10px;
+}
+.title_header div :hover {
+  color: #FCD66C;
+}
+.title_header div button {
+  margin: 10px 6px;
 }
