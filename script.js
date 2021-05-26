@@ -6,22 +6,40 @@ new Vue({
         {
           name: "HOME",
           link: "#",
+          active: false,
+          id:0,
         },
         {
           name: "MISSION",
           link: "#",
+          active: false,
+          id:1,
+
+
         },
         {
           name: "CAUSES",
           link: "#",
+          active: false,
+          id:2,
+
+
         },
         {
           name: "JOURNAL",
           link: "#",
+          active: false,
+          id:3,
+
+
         },
         {
           name: "DONATE",
           link: "#",
+          active: false,
+          id:4,
+
+
         },
 
       ],
@@ -37,9 +55,6 @@ new Vue({
         { file: 'public/images/avada-charity-vaccines-featured-400x300.jpg' },
 
     ],
-
-  
-    
     socialLinkList:[
       {
           text: "-facebook-f", 
@@ -59,11 +74,11 @@ new Vue({
       }, 
   ],
   
-
-    
     imgDefault:0, 
     intervalImg: null,
     counterImg: 0,
+
+    valid:true,
     },
 
     
@@ -99,7 +114,12 @@ new Vue({
       } else{
           clearInterval(this.intervalImg)
       }
-  },
+    },
+   
+    onClick(index){
+      this.navLinks[index].active = !this.navLinks[index].active
+    }
+
       
       
     },

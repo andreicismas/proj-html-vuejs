@@ -22,21 +22,22 @@
         @include display_flex;
         @include a_list_style_reset;
         li{
-            padding: $spaceing - 4;
+            padding: $spaceing - 5;
             margin: 0 $spaceing  ;
             // background-color: $goldenrod_color;
             border-radius: 4px;
             @include hover_yellow_color;
             a{
-              font-family: $font_family_title;
-               
+                font-family: $font_family_title;
                 font-size:$font_size/2;
                 opacity: 50%; 
                  @include a_list_style_reset;
 
             }
+            
            
         }
+      
     }
 }
 .title_header{

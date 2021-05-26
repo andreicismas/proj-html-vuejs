@@ -29,6 +29,16 @@ section{
     flex-grow: 1;
 }
 
-.click_color{
+.valid{
     background-color: $goldenrod_color;
+    .color_black{
+        color: black;
+        opacity: 1;
+    }
+    .color_black:hover{
+          color: black; 
+        opacity: 1;
+
+    }
 }
+

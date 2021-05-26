@@ -25,9 +25,10 @@
 <body>
 <!-- vue container -->
     <div id="root" >
+
+      <!-- header parth -->
         <header>
           <section class="max_container style_header">
-
             <nav class="container">
               <div class="flex_container">
                 <div class="logo_container">
@@ -37,12 +38,13 @@
                 <div class="empty_div"></div>
                 <!-- ciclo for per recuperare i link della nav bar -->
                 <ul>
-                  <li v-for="li in navLinks"><a href="#">{{li.name}}</a></li>
+                  <li v-on:click="onClick(index)" v-bind:class="element.active ? 'valid' : 'red'" v-for="(element , index) in navLinks"><a class="color_black" href="#">{{element.name}}</a></li>
                 </ul>
               </div>
             </nav>
             
-
+            <!-- titel header -->
+              
             <div class="title_header">
               <h1>
                 make a differance
@@ -58,8 +60,12 @@
               </div>
             </div>
           </section>
+
         </header>
+
+        <!-- main parth -->
         <main>
+          <!-- section 1 -->
           <section class="max_container section_1">
             <div class="section_1_text">
               <h1>evrey moment counts</h1>
@@ -94,6 +100,8 @@
               </div>
             </div>
           </section>
+          <!-- section 2 -->
+
           <section class="max_container section_2">
 
             <div class="grey_div"></div>
@@ -135,6 +143,8 @@
               </div>
             </div>
           </section>
+          <!-- section 3 -->
+
           <section class="max_container section_3">
             <div class="section_title">
               <h1>recent  causes</h1>
@@ -161,6 +171,8 @@
               <p>WIEW ALL OUR CAUSES </p>
             </div>
           </section>
+          <!-- section 4 -->
+
           <section class="max_container section_4">
 
             <div class="section_title">
@@ -227,6 +239,9 @@
 
             
           </section>
+
+          <!-- section 5 -->
+
           <section class="max_container section_5">
             <div class="section_title">
               <h1>change a life today</h1>
@@ -239,10 +254,15 @@
               <button class="btn_no_bg">donate now</button>
             </div>
           </section>
+
+          <!-- section 6 -->
+
           <section class="max_container section_6">
             <img src="public\images\avada-charity-mobile-logo.png" alt="">
           </section>
         </main>
+
+        <!-- footer parth -->
         <footer class="max_container ">
           <div>
             <p><i class="far fa-copyright"></i> Copyright 2012 - 2020 <span> avada theme by theme fusion | al right reserved | powered by wordpress</span></p>
@@ -252,6 +272,7 @@
             <i v-for="social in socialLinkList" class="sigla"  :class=" 'fab fa' + social.text"></i>
           </div>
         </footer>
+
       </div>
      <script src="script.js"></script>
 </body>

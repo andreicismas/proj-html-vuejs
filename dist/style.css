@@ -27,8 +27,16 @@ section {
   flex-grow: 1;
 }
 
-.click_color {
+.valid {
   background-color: #FCD66C;
+}
+.valid .color_black {
+  color: black;
+  opacity: 1;
+}
+.valid .color_black:hover {
+  color: black;
+  opacity: 1;
 }
 
 .btn_no_bg {
@@ -92,7 +100,7 @@ section {
   color: #FFFFFF;
 }
 .flex_container ul li {
-  padding: 6px;
+  padding: 5px;
   margin: 0 10px;
   border-radius: 4px;
 }
