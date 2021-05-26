@@ -6,6 +6,10 @@
     .btn_bg_gold{
         @include btn_font_style_whith_bg;
     }
+    :hover{
+        
+        color:black;
+    }
     @include hover_border_color;
 
 }

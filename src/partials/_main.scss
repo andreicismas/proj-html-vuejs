@@ -99,10 +99,37 @@
     }
 
     .container_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        outline: none;
+
+        position: relative;
         padding-bottom: $spaceing*5;
-        img{
-        padding: $spaceing - 5;
-        }   
+        .vue_slider{
+        padding: $spaceing;
+        }
+        .arrow_style{
+            color: $goldenrod_color;
+            font-size: $font_size + 10;
+        } 
+
+        .arrow_style:hover{
+            color: black;
+            transition: 0.3s;
+        }
+      
+        .fa-play-circle{
+            position: absolute;
+            bottom: 20px;
+            font-size: $font_size + 10 ;
+            color: $goldenrod_color;
+        }  
+        .fa-play-circle:hover{
+            color: black;
+            transition: 0.3s;
+        }
     }
     .pink_parth{
         height: 80px;

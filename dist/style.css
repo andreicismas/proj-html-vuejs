@@ -27,6 +27,10 @@ section {
   flex-grow: 1;
 }
 
+.click_color {
+  background-color: #FCD66C;
+}
+
 .btn_no_bg {
   font-family: "Quicksand", sans-serif;
   font-size: 10px;
@@ -53,6 +57,9 @@ section {
   background-color: #FCD66C;
   opacity: 100%;
   border: solid 2px #FCD66C;
+}
+.container_btn_gold :hover {
+  color: black;
 }
 .container_btn_gold :hover {
   border: solid 2px #E9C899;
@@ -233,10 +240,33 @@ section {
   padding: 20px;
 }
 .section_3 .container_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  position: relative;
   padding-bottom: 50px;
 }
-.section_3 .container_img img {
-  padding: 5px;
+.section_3 .container_img .vue_slider {
+  padding: 10px;
+}
+.section_3 .container_img .arrow_style {
+  color: #FCD66C;
+  font-size: 30px;
+}
+.section_3 .container_img .arrow_style:hover {
+  color: black;
+  transition: 0.3s;
+}
+.section_3 .container_img .fa-play-circle {
+  position: absolute;
+  bottom: 20px;
+  font-size: 30px;
+  color: #FCD66C;
+}
+.section_3 .container_img .fa-play-circle:hover {
+  color: black;
+  transition: 0.3s;
 }
 .section_3 .pink_parth {
   height: 80px;
@@ -390,12 +420,30 @@ footer {
 footer div p {
   padding: 20px;
   font-family: "Poppins", sans-serif;
-  font-size: 10px;
+  font-size: 8px;
   opacity: 0.5;
 }
+footer div p span {
+  text-transform: uppercase;
+}
+footer .fab_wrapper {
+  display: flex;
+}
 footer .fab_wrapper .fab {
-  background-color: violet;
-  width: 70px;
-  height: 70px;
+  margin: 5px;
+  font-size: 24px;
+  color: #FCD66C;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+}
+footer .fab_wrapper :hover {
+  background-color: #FCD66C;
+  transition: 0.4s;
+  color: #FFFFFF;
+}
+footer .fab_wrapper .sigla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

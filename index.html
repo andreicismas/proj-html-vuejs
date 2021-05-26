@@ -141,12 +141,22 @@
               <div class="gold_line"></div>
               <p>We run projects in over 30 countries in 5 continents</p>
             </div>
-            <div class="container_img">
-              <img src="public\images\avada-charity-fair-trade-featured-200x150.jpg" alt="">
-              <img src="public\images\avada-charity-farming-featured-200x150.jpg" alt="">
-              <img src="public\images\avada-charity-shelter-featured-200x150.jpg" alt="">
-              <img src="public\images\avada-charity-vaccines-featured-200x150.jpg" alt="">
+            <!-- funzionamento con le frece della tastiera -->
+            <div tabindex="-1" @keyup.left="leftClick" @keyup.right= "rightClick" class="container_img">
+
+              <div class="arrow_style">
+                <i  @click="leftClick" class="fas fa-chevron-left" aria-hidden="true"></i>
+              </div>
+              <!-- slider vue -->
+              <img class="vue_slider" :src="myImages[imgDefault].file" alt="">             
+
+              <div class="arrow_style">
+                <i  @click="rightClick"  class="fas fa-chevron-right"  aria-hidden="true"></i>
+              </div>
+              <!-- auto play -->
+              <i @click ="setTimer" class="fa fa-play-circle" aria-hidden="true"></i> 
             </div>
+
             <div class="pink_parth">
               <p>WIEW ALL OUR CAUSES </p>
             </div>
@@ -235,14 +245,11 @@
         </main>
         <footer class="max_container ">
           <div>
-            <p><i class="far fa-copyright"></i> Copyright 2012 - 2020 avada theme by theme fusion | al right reserved | powered by wordpress</p>
+            <p><i class="far fa-copyright"></i> Copyright 2012 - 2020 <span> avada theme by theme fusion | al right reserved | powered by wordpress</span></p>
           </div>
+          <!-- add icon with vue cicle -->
           <div class="fab_wrapper">
-            
-            <i class=" fab fa-facebook-f"></i>
-            <i class=" fab fa-instagram"></i>
-            <i class=" fab fa-twitter"></i>
-            <i class=" fab fa-youtube"></i>
+            <i v-for="social in socialLinkList" class="sigla"  :class=" 'fab fa' + social.text"></i>
           </div>
         </footer>
       </div>

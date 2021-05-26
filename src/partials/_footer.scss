@@ -9,18 +9,34 @@ footer{
         p{
             padding: $spaceing*2;
             font-family: $font_family_p;
-            font-size: $font_size - 10 ;
+            font-size: $font_size - 12 ;
             opacity: 0.5;
+            span{
+                text-transform: uppercase;
+            }
         }
     }
     .fab_wrapper{
+        display: flex;
+        
 
         .fab{
-         
-            background-color: violet;
-            width: 70px;
-            height: 70px;
+            margin: $spaceing - 5;
+            font-size: $font_size + 4;
+            color:$goldenrod_color;
+            width: 40px;
+            height: 40px;
             border-radius: 50%;
+        }
+        :hover{
+            background-color: $goldenrod_color;
+            transition: 0.4s;
+            color: $white_color;
+        }
+        .sigla{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
